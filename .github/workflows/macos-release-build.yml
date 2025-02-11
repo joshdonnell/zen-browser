@@ -15,20 +15,6 @@ on:
         type: string
         required: true
         default: ''
-  workflow_dispatch:
-    inputs:
-      build-version:
-        description: 'The version to build'
-        required: true
-        type: string
-      release-branch:
-        description: 'The branch to build'
-        required: true
-        type: string
-      MOZ_BUILD_DATE:
-        type: string
-        required: true
-        default: ''
 
 jobs:
   mac-build:
